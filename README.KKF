@@ -1,0 +1,39 @@
+READ_THIS_FIRST ------------------------------------------------------
+
+Author of this file: Kerry Flint
+                     1:209/705.0@fidonet.org
+
+Copyrights of UNARJ: (C) 1990-93, Robert K Jung
+
+This archive contains sources for the UNARJ 2.41 ARJ-extractor, found
+by anonymous ftp'ing to garbo.uwasa.fi (directory /pc/sources). The
+original archive contained also executable file for MS-DOS, which I
+have substituted with an OS/2 equivalent. Compiling was done with
+CSET/2 1.0 compiler. All the changes made to the original
+package are mentioned below. NOTE: the original (garbo-modified)
+package is included, because Robert K Jung seems to like it that way
+(see `unarj.doc' file).
+
+This is a 32 bit version.
+
+I've added the option to specify filespecs to the end of the command line
+to specify the file(s) to extract along with extraction paths.
+
+Format: unarj <command> <archive> [outpath][filespec1] [path][filespec2] ...
+
+Outpath:  If specified becomes the default extraction path for all files.
+          If not specified the default is the current directory.
+
+path:  Overrides the extraction path for the next filespec only.
+
+filespec: File(s) to extract.  Wildcards * and ? will be expanded.
+
+If nothing is specified after the archive name the default is to extract
+all files into the current directory.
+
+****  1/24/94 ****
+
+Added Wildcard expansion of the <archive> filespec.  All archives that
+match the <archive> filespec will have <command> applied to them.
+Valid wildcards are the same as OS/2, * and ?.
+

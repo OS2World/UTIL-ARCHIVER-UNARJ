@@ -1,0 +1,13 @@
+Author of this file: T. Okabayashi
+                     sctokab@ipc.shizuoka.ac.jp
+
+Copyrights of UNARJ: (C) 1990-93, Robert K Jung 
+Modified by Kerry Flint  1994 (Ver. 2.41.kkf.a)
+Modified by T. Okabayashi 1998 (Ver. 2.41.to.b)
+
+
+I have added the option 'p' to extract to stdout in this version 2.41.to.b.
+The other options are explained in UNARJ.DOC (writen by Robert K Jung) and 
+README.KKF (writen by Kerry Flint).
+
+

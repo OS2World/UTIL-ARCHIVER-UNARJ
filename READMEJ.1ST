@@ -1,0 +1,28 @@
+Author of this file: T. Okabayashi
+                     sctokab@ipc.shizuoka.ac.jp
+
+Copyrights of UNARJ: (C) 1990-93, Robert K Jung 
+Modified by Kerry Flint  1994 (Ver. 2.41.kkf.a)
+Modified by T. Okabayashi 1998 (Ver. 2.41.to.b)
+
+
+UNARJ を葉山薫氏作のファイラ eff / アーカイブビューワ ell で使いやすいように
+標準出力への解凍をサポートしたものです。（当時の ell はアーカイバが標準出力
+への解凍機能を持っている事が必須でしたので。）
+
+以下のように _eff または ell.cfg に登録して下さい。
+
+# ----------- ARJ 形式 -------------
+archive  "*.arj", 
+         "*.exe" ("ARJSFX",0,2047),
+         "*.exe" ("RJSX",0,2047)
+{
+	extract="unarj x",
+	junk="unarj e",
+	list="unarj l",
+	print="unarj p",
+	start="------------",
+	end="------------",
+}
+
+
